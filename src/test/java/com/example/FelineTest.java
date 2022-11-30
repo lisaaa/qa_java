@@ -16,10 +16,7 @@ public class FelineTest {
     @Test
     public void eatMeat() throws Exception {
         List<String> actualEatMeat = feline.eatMeat();
-        List<String> expectedEatMeat = new ArrayList<>();
-        expectedEatMeat.add("Животные");
-        expectedEatMeat.add("Птицы");
-        expectedEatMeat.add("Рыба");
+        List<String> expectedEatMeat = List.of("Животные", "Птицы", "Рыба");
         Assert.assertTrue(actualEatMeat.containsAll(expectedEatMeat));
     }
 

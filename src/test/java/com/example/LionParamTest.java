@@ -6,9 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
 
@@ -16,7 +14,7 @@ import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.when;
 
 @RunWith(Parameterized.class)
-public class LionTest {
+public class LionParamTest {
 
     public  String gender;
     public  boolean expectedResult;
@@ -38,7 +36,7 @@ public class LionTest {
     }
 
 
-    public LionTest(String gender, boolean expectedResult){
+    public LionParamTest(String gender, boolean expectedResult){
         this.gender = gender;
         this.expectedResult = expectedResult;
 
